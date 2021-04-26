@@ -24,18 +24,18 @@ function run() {
 		let request = new Request(url);
 		fetch(request)
 			.then(response=>{
-				if ( !response.ok ) {
-					console.log('失敗: '+response.status);
-				}
 				return response.json();
 			})
 			.then(json=>{
 				let result = json['@graph'][0];
 				showResult(result);
+			})
+			.catch(err=>{
+				console.log('失敗: '+err.message);
 			});
 	});
 
-	let showResult = (result)=>{
+	const showResult = result=>{
 		let resultDiv = document.querySelector('#result');
 
 		resultDiv.innerHTML = '';
