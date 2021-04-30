@@ -7,6 +7,7 @@ JavaScriptの実験プロジェクト。
 ## 実験内容
 
 - cinii ...DOM操作、イベント監視、Ajax通信のサンプル
+- vanilla ...配列の`map()`や`forEach()`の使用例
 
 ## cinii
 

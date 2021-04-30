@@ -1,0 +1,208 @@
+/* palette
+ *
+ *              LIGHT    DARK
+ * MAIN_FG:     #333333  #f5f5f5
+ * MAIN_FG_ALT: #424242  #d9d9d9
+ * MAIN_BG:     #f5f5f5  #333333
+ * MAIN_BG_ALT: #ededed  #424242
+ * SUCCESS_FG:  #2f7920  #46b630
+ * ERROR_FG:    #c94117  #ec7d5a
+ * FORWARD_m2:  hsl(210, 74%, 41%);
+ * FORWARD_m1:  hsl(210, 74%, 49%);
+ * FORWARD_0:   hsl(210, 74%, 57%);
+ * FORWARD_p1:  hsl(210, 74%, 65%);
+ * FORWARD_p2:  hsl(210, 74%, 73%);
+ * BACKWORD_m2: hsl(25, 74%, 41%);
+ * BACKWORD_m1: hsl(25, 74%, 49%);
+ * BACKWORD_0:  hsl(25, 74%, 57%);
+ * BACKWORD_p1: hsl(25, 74%, 65%);
+ * BACKWORD_p2: hsl(25, 74%, 73%);
+ * DEL_m2:      hsl(3, 74%, 41%);
+ * DEL_m1:      hsl(3, 74%, 49%);
+ * DEL_0:       hsl(3, 74%, 57%);
+ * DEL_p1:      hsl(3, 74%, 65%);
+ * DEL_p2:      hsl(3, 74%, 73%);
+ */
+
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+	line-height: 1.5;
+}
+ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* sample */
+.container {
+	width: 80%;
+	min-width: 960px;
+	margin: 0 auto;
+}
+.row {
+	display: table;
+	width: 100%;
+}
+.col {
+	display: table-cell;
+	width: 50%;
+	vertical-align: top;
+}
+.light-wrap {
+	background-color: #f5f5f5;
+}
+.light-wrap .main-heading {
+	color: #333333;
+}
+.light-wrap .sub-heading {
+	color: #424242;
+}
+.dark-wrap {
+	border-left: 4px solid #fff;
+	background-color: #333333;
+}
+.dark-wrap .main-heading {
+	color: #f5f5f5;
+}
+.dark-wrap .sub-heading {
+	color: #D9D9D9;
+}
+.side {
+	width: 20%;
+	padding: 16px 4px 4px 8px;
+}
+.main > section {
+	padding-left: 16px;
+}
+.light-wrap .side {
+	background-color: #ededed;
+}
+.dark-wrap .side {
+	background-color: #424242;
+}
+.side ul {
+	margin: 0;
+	padding: 0;
+}
+.side ul li {
+	list-style: none;
+}
+.light-wrap .side ul {
+	color: #424242;
+}
+.dark-wrap .side ul {
+	color: #D9D9D9;
+}
+.success,
+.danger {
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	margin: 0;
+}
+.light-wrap .success {
+	color: #2f7920;
+	border: 1px solid #2f7920;
+}
+.dark-wrap .success {
+	color: #46b630;
+	border: 1px solid #46b630;
+}
+.light-wrap .danger {
+	color: #c94117;
+	border: 1px solid #c94117;
+}
+.dark-wrap .danger {
+	color: #ec7d5a;
+	border: 1px solid #ec7d5a;
+}
+.go,
+.back,
+.del {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 8px;
+	border-radius: 50%;
+	line-height: 60px;
+	text-align: center;
+}
+.go-m2 {
+	background-color: hsl(210, 74%, 41%);
+}
+.go-m1 {
+	background-color: hsl(210, 74%, 49%);
+}
+.go-0 {
+	background-color: hsl(210, 74%, 57%);
+}
+.go-p1 {
+	background-color: hsl(210, 74%, 65%);
+}
+.go-p2 {
+	background-color: hsl(210, 74%, 73%);
+}
+.back-m2 {
+	background-color: hsl(25, 74%, 41%);
+}
+.back-m1 {
+	background-color: hsl(25, 74%, 49%);
+}
+.back-0 {
+	background-color: hsl(25, 74%, 57%);
+}
+.back-p1 {
+	background-color: hsl(25, 74%, 65%);
+}
+.back-p2 {
+	background-color: hsl(25, 74%, 73%);
+}
+.del-m2 {
+	background-color: hsl(3, 74%, 41%);
+}
+.del-m1 {
+	background-color: hsl(3, 74%, 49%);
+}
+.del-0 {
+	background-color: hsl(3, 74%, 57%);
+}
+.del-p1 {
+	background-color: hsl(3, 74%, 65%);
+}
+.del-p2 {
+	background-color: hsl(3, 74%, 73%);
+}
+.well {
+	margin-top: 8px;
+	padding: 4px;
+}
+.light-wrap .well {
+	background-color: #424242;
+	color: #f5f5f5;
+}
+.dark-wrap .well {
+	background-color: #ededed;
+	color: #333333;
+}
+
+.cats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cat {
+	max-width: 200px;
+
+}
+
